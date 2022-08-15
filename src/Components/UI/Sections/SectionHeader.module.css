@@ -1,0 +1,30 @@
+h1{
+      color: 141414;
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+}
+.greyText {
+      color: #4b4b4b;
+      font-size: 3rem;
+}
+
+.nameWrapper {
+      margin: 1rem auto 1rem auto;
+}
+
+.enthusiast {
+      margin: 1rem auto 1rem auto;
+}
+
+.enthusiast > h2 {
+      color: #4b4b4b;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+}
+.img {
+      border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
+}

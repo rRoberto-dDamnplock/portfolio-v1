@@ -1,0 +1,57 @@
+.skills {
+      /* display: flex;
+      flex-wrap: wrap; */
+      margin: 1rem auto 1rem auto;
+}
+
+.skill-button-light > p {
+      margin: 0;
+    
+}
+
+.skill-button > p {
+      margin: 0;
+    
+}
+
+.fEnd {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 1rem;
+      transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+/* .bEnd {
+      display: flex;
+      object-fit: cover;
+} */
+
+.skill-button {
+      width: 90%;
+      min-height: 2.5rem;
+      margin: 1rem auto 1rem auto;
+      font-size: 20px;
+      border-style:none ;
+      cursor: pointer;
+      justify-content: center;
+      transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+.skill-button-light {
+      width: 90%;
+      min-height: 2.5rem;
+      margin: 1rem auto 1rem auto;
+      font-size: 20px;
+      border-style:none ;
+      background-color: #F9F6F6 ;
+      cursor: pointer;
+      transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+.skillImg {
+      width: 30%;
+      margin: .2rem .2rem
+}
+
+

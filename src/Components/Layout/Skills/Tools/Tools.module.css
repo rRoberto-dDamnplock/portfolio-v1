@@ -1,0 +1,49 @@
+.toolsButton {
+      width: 90%;
+      min-height: 2.5rem;
+      margin: 1rem auto 1rem auto;
+      font-size: 20px;
+      border-style:none ;
+      cursor: pointer;
+      justify-content: center;
+      transition: width 600ms ease-out, height 600ms ease-out;
+}
+
+.toolsButton > p {
+      margin: 5px 5px;
+
+}
+
+.envButton {
+      width: 90%;
+      min-height: 2.5rem;
+      margin: 1rem auto 1rem auto;
+      font-size: 20px;
+      border: 1px black solid;
+      cursor: pointer;
+      justify-content: center;
+      transition: width 600ms ease-out, height 600ms ease-out;
+      z-index: 10
+}
+
+.envButton:hover{
+      background-color: antiquewhite;
+}
+.envButton > p {
+    margin: 5px 5px;
+}
+
+.toolDiv {
+      
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+            transition: width 600ms ease-out, height 600ms ease-out;
+      
+}
+
+.toolImg {
+      width: 30%;
+      margin: .2rem .2rem
+}

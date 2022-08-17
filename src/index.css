@@ -14,7 +14,9 @@ background-size: cover;
    
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
+  -webkit-transition: height 1s ease;
+       -moz-transition: height 1s ease;
+            transition: height 1s ease;
 }
 /* this is the mobile design */
 @media (max-width: 768px) {

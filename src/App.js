@@ -12,6 +12,7 @@ function App() {
   return (
     <>
     <div className="App">
+   
 <Nav/>
 <Header/>
 <CarouselComp/>
@@ -19,8 +20,9 @@ function App() {
 <Tools/>
 <AboutMe/>
 <Contact/>
-</div>
+
 <Footer/>
+</div>
 </>
     
   );

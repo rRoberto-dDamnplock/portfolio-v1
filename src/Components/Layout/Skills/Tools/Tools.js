@@ -38,17 +38,16 @@ function Tools(props) {
     toolDispatcher({ type: "TOOL" });
   };
 
-  const envClickHandler = (event) => {
-      event.stopPropagation();
-    toolDispatcher({ type: "ENV" });
-    
-  };
+  // const envClickHandler = (event) => {
+  //   event.stopPropagation();
+  //   toolDispatcher({ type: "ENV" });
+  // };
   return (
-    <div>
+    <div className={classes.tool_wrap}>
       <h1>Tools/Enverironment</h1>
 
-      <button className={classes.toolsButton} >
-        <p onClick={toolClickHandler}>Tools</p>
+      <button className={classes.toolsButton} onClick={toolClickHandler}>
+        Tools
 
         {currToolState.toolState && (
           <div className={classes.toolDiv}>
@@ -68,37 +67,28 @@ function Tools(props) {
         )}
 
         {currToolState.toolState && (
-          <div
-            className={classes.envButton}
-            role="button"
-            type="button"
-            onClick={envClickHandler}
-          >
-
+          <div className={classes.envButton} role="button" type="button">
             <p> Enverironment </p>
-          
 
-            {currToolState.environmentState && (
-              <div className={classes.envImg}>
-                <img
-                  className={classes.toolImg}
-                  src={windows}
-                  alt="front end skills"
-                />
-                <img
-                  className={classes.toolImg}
-                  src={mac}
-                  alt="front end skills"
-                />
-                <img
-                  className={classes.toolImg}
-                  src={linux}
-                  alt="front end skills"
-                />
-              </div>
-            )}
+            <div className={classes.envImg}>
+              <img
+                className={classes.toolImg}
+                src={windows}
+                alt="front end skills"
+              />
+              <img
+                className={classes.toolImg}
+                src={mac}
+                alt="front end skills"
+              />
+              <img
+                className={classes.toolImg}
+                src={linux}
+                alt="front end skills"
+              />
+            </div>
           </div>
-    )}
+        )}
       </button>
     </div>
   );

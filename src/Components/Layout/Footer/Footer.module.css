@@ -1,0 +1,31 @@
+
+.footer {
+
+      background-color: #F9F6F6;
+    width: 100%;
+   padding-bottom: 1rem;
+   
+}
+
+.footer > p {
+      margin: auto 1rem auto 1rem;
+      text-align: center;
+}
+
+.sc_img {
+      width: 3rem;
+      height: 100%;
+      margin: 1rem 1rem;
+}
+
+.sc_div {
+      display: flex;
+      align-items: center;
+      height: 50%;
+      width: 85%;
+      margin: auto;
+      justify-content:space-around;
+      margin: 0.5rem 1rem;
+     
+
+}

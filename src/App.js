@@ -4,17 +4,25 @@ import Header from './Components/Layout/Header/Header';
 import CarouselComp from './Components/UI/Carousel/CarouselComp';
 import Skills from './Components/Layout/Skills/Skills';
 import Tools from './Components/Layout/Skills/Tools/Tools';
+import AboutMe from './Components/Layout/About me/AboutMe';
+import Contact from './Components/Layout/Contact/Contact';
+import Footer from './Components/Layout/Footer/Footer';
 
 function App() {
   return (
+    <>
     <div className="App">
 <Nav/>
 <Header/>
 <CarouselComp/>
 <Skills/>
 <Tools/>
-
-    </div>
+<AboutMe/>
+<Contact/>
+</div>
+<Footer/>
+</>
+    
   );
 }
 

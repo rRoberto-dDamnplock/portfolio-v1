@@ -1,4 +1,6 @@
-
+.carousel_wrap {
+  margin: 1rem .8rem 1rem 0.8rem;
+}
 .carousel-container {
   display: flex;
 
@@ -32,7 +34,7 @@ h2 {
 }
 
 .buttonCarousel {
-  width: 85%;
+  width: 100%;
   display: flex;
   position: relative;
   justify-content: space-between;

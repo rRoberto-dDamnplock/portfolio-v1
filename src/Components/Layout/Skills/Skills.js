@@ -69,11 +69,11 @@ function Skills(props) {
   };
 
   return (
-    <>
+    <div className={classes.skill_wrap}>
       <h1>Skills/Technologies</h1>
       <div className={classes.skills} >
         <button className={classes["skill-button-light"]} onClick={fclickDivHandler}>
-          <p>Front End</p>
+          Front End
           {currDivState.front_end && (
             <div className={classes.bEnd}>
               <img
@@ -110,7 +110,7 @@ function Skills(props) {
           )}
         </button>
         <button className={classes["skill-button"]} onClick={dclickDivHandler}>
-          <p>Design</p>
+          Design
           {currDivState.design && (
             <div className={classes.fEnd}>
               <img
@@ -122,8 +122,7 @@ function Skills(props) {
           )}
         </button>
         <button className={classes["skill-button-light"]} onClick={bclickDivHandler}>
-          <p>Back end</p>
-          {currDivState.back_end && (
+          Back end   {currDivState.back_end && (
             <div className={classes.fEnd}>
               <img
                 className={classes.skillImg}
@@ -156,7 +155,7 @@ function Skills(props) {
           )}
         </button>
         <button className={classes["skill-button"]} onClick={oclickDivHandler}>
-          <p>Other</p>
+          Other
           {currDivState.other && (
             <div className={classes.fEnd}>
               <img
@@ -184,7 +183,7 @@ function Skills(props) {
           )}
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

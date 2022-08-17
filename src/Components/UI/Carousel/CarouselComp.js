@@ -76,7 +76,7 @@ useEffect(() => {
 
 
   return (
-    <>
+    <div className={classes.carousel_wrap}>
     <h1>Currently Learning/Reading...</h1>
     <div className={classes["carousel-container"]}>
       {data.map((item, index) => {
@@ -96,7 +96,7 @@ useEffect(() => {
          
       })}
     </div>
-    </>
+    </div>
   );
 }
 

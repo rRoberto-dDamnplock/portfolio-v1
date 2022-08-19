@@ -71,20 +71,18 @@ useEffect(() => {
     return setCurrentIndex(currentIndex+1)
   }
 
-
-
-
+ 
 
   return (
     <div className={classes.carousel_wrap}>
-    <h1>Currently Learning/Reading...</h1>
+    <h1 style={{textAlign: 'center'}}>Currently Learning/Reading...</h1>
     <div className={classes["carousel-container"]}>
       {data.map((item, index) => {
         return <div 
         className={classes['carousel-item']} 
         style={{transform: `translate(-${currentIndex * 100}%)`}}
          key={index}>
-          <h2 className={classes.topic}>{item.topic}</h2>
+          <h2 className={classes.topic} style={{textAlign: 'center'}}>{item.topic}</h2>
           <div className={classes.buttonCarousel}>
           <button onClick={prevHandler}><strong>Prev</strong></button>
           <button onClick={nextHandler}><strong>Next</strong></button>

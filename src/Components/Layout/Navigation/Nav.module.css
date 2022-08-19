@@ -101,3 +101,15 @@
     width: 100%;
     background-color: black;
   }
+
+  /* @media screen 
+  and (min-device-width: 1000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+   .burger {
+    width: 100%;
+    box-shadow: none;
+    background-color: #E7E7E7
+    ;
+    content: ;
+   }
+} */

@@ -27,5 +27,21 @@
       justify-content:space-around;
       margin: 0.5rem 1rem;
      
+}
 
+@media screen 
+and (min-device-width: 1000px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+ .sc_div {
+display: flex;
+flex-direction: column;
+position: absolute;
+width: 5%;
+height: 2rem;
+bottom: 0;
+
+left: 0;
+/* top: 0;
+left: -621px; */
+ }
 }

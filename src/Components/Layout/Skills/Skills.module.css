@@ -1,5 +1,52 @@
 .skill_wrap {
       margin: 1rem .8rem 1rem 0.8rem;
+ 
+      /* text-align: center; */
+}
+
+@media screen 
+  and (min-device-width: 1000px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+      .skill_wrap{
+            margin: 1rem 10rem 1rem 10rem;
+           
+      }
+
+      .skills {
+           width: 100%;
+            margin: 1rem auto 1rem auto;
+      }
+      
+
+      .skill-button {
+            width: 30%;
+            min-height: 2.5rem;
+            margin: 1rem auto 1rem auto;
+            font-size: 20px;
+            border-style:none ;
+            cursor: pointer;
+            justify-content: center;
+            transition: width 600ms ease-out, height 600ms ease-out;
+      }
+    
+      .skill-button-light {
+            width: 50%;
+            min-height: 2.5rem;
+            margin: 1rem auto 1rem auto;
+            font-size: 20px;
+            border-style:none ;
+            background-color: red;
+            /* background-color: #F9F6F6 ; */
+            cursor: pointer;
+            transition: width 600ms ease-out, height 600ms ease-out;
+      }
+
+   
+      
+}
+
+.skill_wrap > h1 {
+      text-align: center;
 }
 
 

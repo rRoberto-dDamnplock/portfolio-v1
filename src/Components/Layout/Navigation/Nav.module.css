@@ -5,6 +5,7 @@
     width: 32px;
     height: 32px;
     opacity: 0.3;
+    z-index: 200;
   }
   .close:hover {
     opacity: 1;
@@ -30,19 +31,22 @@
     flex-direction: column;
     align-items: flex-start;
  justify-content: space-around;
+ z-index: 200;
 }
 
 .nav_wrapper > a {
     font-size: 1.2rem;
     margin-left:.5rem ;
     font-weight: bold;
+    z-index: 200;
 }
 .nav_modal {
     position: absolute;
  top: 0;
  width: 75%;
-    height: 25rem;
+    height: 100%;
     background-color: #E7E7E7;
+    z-index: 200;
 }
 
 
@@ -62,7 +66,7 @@
       align-items: center;
       padding: 5px;
       transition: all .5s ease;
-      margin: 1em;
+     margin: auto 1rem;
   }
   .burger:hover {
       background: rgb(56 56 56);
@@ -100,6 +104,9 @@
     height: 100%;
     width: 100%;
     background-color: black;
+  }
+  .switch {
+   margin-top: .5rem;
   }
 
   /* @media screen 

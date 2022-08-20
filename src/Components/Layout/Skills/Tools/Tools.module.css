@@ -1,6 +1,36 @@
 .tool_wrap {
+      width: auto;
       margin: 1rem .8rem 1rem 0.8rem;
 }
+
+
+@media screen and (min-width: 600px) {
+      h1 {
+            text-align: center;
+      }
+
+      .tool_wrap {
+            max-width: 100%;
+            margin: 1rem .8rem 1rem 0.8rem;
+      }
+      
+
+      .tool_wrap {
+            margin: 2rem .8rem 2rem 0.8rem;
+      }
+
+      .toolsButton {
+            max-width: 40%;
+            min-height: 2.5rem;
+            margin: 1rem auto 1rem auto;
+            font-size: 20px;
+            border-style:none ;
+            cursor: pointer;
+            justify-content: center;
+            transition: width 600ms ease-out, height 600ms ease-out;
+      }
+      
+  }
 
 .toolsButton {
       width: 90%;
@@ -30,9 +60,7 @@
       z-index: 10
 }
 
-.envButton:hover{
-      background-color: antiquewhite;
-}
+
 .envButton > p {
     margin: 5px 5px;
 }

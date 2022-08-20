@@ -1,7 +1,55 @@
 .App {
   /* margin: 1rem .8rem 1rem 0.8rem; */
   text-align: center;
+  width: 100%;
 
+}
+
+h1 {
+  font-size: 50px;
+}
+
+#light {
+  background-image: url(./assets/background-main.svg);
+}
+
+#dark {
+  background-image: url(./assets/backgroundbackground-dark-svg.svg);
+  /* /home/robertorajaonarivony/legacy/webdev/portfolio-app-react/src/assets/backgroundbackground-dark-svg.svg */
+}
+
+
+#dark h1 {
+
+  background: -webkit-linear-gradient(45deg,
+  hsl(159deg 97% 26%) 0%,
+  hsl(160deg 72% 29%) 6%,
+  hsl(164deg 61% 29%) 12%,
+  hsl(170deg 53% 29%) 18%,
+  hsl(178deg 47% 28%) 24%,
+  hsl(187deg 46% 28%) 31%,
+  hsl(196deg 46% 29%) 39%,
+  hsl(207deg 43% 31%) 48%,
+  hsl(221deg 40% 34%) 60%,
+  hsl(233deg 38% 37%) 75%,
+  hsl(244deg 42% 38%) 84%,
+  hsl(251deg 52% 37%) 90%,
+  hsl(257deg 66% 36%) 96%,
+  hsl(262deg 89% 33%) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#dark h2 {
+  color: white;
+}
+
+/* background-image: linear-gradient(
+  
+); */
+
+button {
+  border-radius: 4px;
 }
 
 @media screen 

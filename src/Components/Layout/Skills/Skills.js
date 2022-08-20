@@ -69,7 +69,7 @@ function Skills(props) {
   };
 
   return (
-    <div className={classes.skill_wrap}>
+    <div className={classes.skill_wrap} data-aos="fade-right">
       <h1>Skills/Technologies</h1>
       <div className={classes.skills} >
         <button className={classes["skill-button-light"]} onClick={fclickDivHandler}>

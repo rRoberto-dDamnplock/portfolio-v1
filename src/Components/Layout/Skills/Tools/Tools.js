@@ -43,7 +43,7 @@ function Tools(props) {
   //   toolDispatcher({ type: "ENV" });
   // };
   return (
-    <div className={classes.tool_wrap}>
+    <div className={classes.tool_wrap} data-aos="fade-right">
       <h1>Tools/Enverironment</h1>
 
       <button className={classes.toolsButton} onClick={toolClickHandler}>

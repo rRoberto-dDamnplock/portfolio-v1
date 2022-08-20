@@ -21,7 +21,11 @@ function Footer(props) {
                         <img src={discord} className={classes.sc_img} alt='social media buttons'/>
                   </a>
                   </div>
-                 <p>Designed and built by Rajaonarivony Roberto Copyright 2022</p> 
+                  <div className={classes.copyright}>
+                 <p>Designed and built by </p> 
+                 <p>Rajaonarivony Tafita Sanchez Roberto</p>
+                 <p>Copyright 2022</p>
+                 </div>
                  {/* <p></p> */}
                  
             </div>

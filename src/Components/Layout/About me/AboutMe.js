@@ -6,7 +6,7 @@ function AboutMe(props) {
       setPState((prevPState) => !prevPState)
  }
       return (
-            <div className={classes.abt_wrap}>
+            <div className={classes.abt_wrap} data-aos="fade-left">
                 <h1>About Me/Experience</h1>  
                 {!pState && (  <h2 className={classes.about_me}>
                      As i have mentionned above, I started teaching myself how to code since I was 16 years old.

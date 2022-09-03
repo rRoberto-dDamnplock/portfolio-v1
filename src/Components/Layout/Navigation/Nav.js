@@ -6,7 +6,7 @@ function Nav(props) {
   const [divState, setDivState] = useState(false);
 
   function navClickHandler() {
-    console.log('SET div state')
+    
     setDivState((prevDivState) => !prevDivState);
   }
   return (<>

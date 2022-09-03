@@ -7,9 +7,10 @@ import Tools from './Components/Layout/Skills/Tools/Tools';
 import AboutMe from './Components/Layout/About me/AboutMe';
 import Contact from './Components/Layout/Contact/Contact';
 import Footer from './Components/Layout/Footer/Footer';
-import Modal from './Components/UI/Modal'
+
 import ReactSwitch from 'react-switch'
 import { createContext, useState } from 'react';
+import Switch from './Components/UI/switch/Switch';
 export const ThemeContext = createContext(null)
 
 function App() {
@@ -29,15 +30,24 @@ const toggleTheme = () => {
    {/* <Modal> */}
   
 <Nav/>
-<ReactSwitch onChange={toggleTheme} checked={theme === "dark"} />
+{/* <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> */}
+
+<Switch onChange={toggleTheme} />
+{/* <div class="theme-switch-wrapper">
+       <label className="theme-switch" for="checkbox">
+    <input type="checkbox" id="checkbox" checked={theme === "dark"}/>
+    <div class="slider round"></div>
+  </label>
+    <em>Enable Dark Mode!</em>
+  </div> */}
 <Header/>
-<CarouselComp/>
+<CarouselComp />
 <Skills/>
 <Tools/>
 <AboutMe/>
 <Contact/>
 
-<Footer/>
+<Footer checked={theme}/>
 </div>
 {/* </Modal> */}
 

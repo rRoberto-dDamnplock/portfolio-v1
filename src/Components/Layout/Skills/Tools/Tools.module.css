@@ -1,6 +1,11 @@
 .tool_wrap {
       width: auto;
+
       margin: 1rem .8rem 1rem 0.8rem;
+}
+
+.tool_wrap > h1 {
+      text-align: center;
 }
 
 

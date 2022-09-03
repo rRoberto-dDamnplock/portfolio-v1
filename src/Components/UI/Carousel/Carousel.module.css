@@ -68,11 +68,11 @@ h2 {
 }
 
 .buttonCarousel > button {
-  background-color: white;
+  background-color: transparent;
   width: 4rem;
   height: 3rem;
   border-radius: 80%;
   border-style:none ;
-  opacity: 50%;
+  opacity: 40%;
   cursor: pointer;
 }

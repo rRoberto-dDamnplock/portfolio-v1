@@ -2,19 +2,27 @@
   /* margin: 1rem .8rem 1rem 0.8rem; */
   text-align: center;
   width: 100%;
-
+  overflow-x: hidden;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 2rem;
 }
 
 #light {
   background-image: url(./assets/background-main.svg);
+  -webkit-transition: background-color 2s ease-in; /* Safari */
+  transition: background-color 2s ease-in;
+-webkit-transition-delay: 2s; /* Safari */
+  transition-delay: 2s;
 }
 
 #dark {
   background-image: url(./assets/backgroundbackground-dark-svg.svg);
+  -webkit-transition: background-color 2s ease-in; /* Safari */
+  transition: background-color 2s ease-in;
+-webkit-transition-delay: 2s; /* Safari */
+  transition-delay: 2s;
   /* /home/robertorajaonarivony/legacy/webdev/portfolio-app-react/src/assets/backgroundbackground-dark-svg.svg */
 }
 
@@ -38,11 +46,24 @@ h1 {
   hsl(262deg 89% 33%) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-transition: background-color 2s ease-in; /* Safari */
+  transition: background-color 2s ease-in;
+-webkit-transition-delay: 2s; /* Safari */
+  transition-delay: 2s;
 }
 
+
+
+
 #dark h2 {
+  /* color: #888888; */
   color: white;
+  
 }
+
+/* #dark #image_footer {
+  background-image: url(./assets/coca-leaves.png);
+} */
 
 /* background-image: linear-gradient(
   
@@ -63,9 +84,18 @@ button {
     p, h1, h2 {
       text-align: center;
       margin: 1rem auto 1rem auto;
+    
      
     }
-
+    h1{
+      margin: 0;
+      font-size: 3rem;
+      
+    }
+h2 {
+  margin: 0;
+  font-size: 2rem;
+}
 }
 
 

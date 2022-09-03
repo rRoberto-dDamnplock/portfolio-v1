@@ -16,3 +16,33 @@
             transition: width 600ms ease-out, height 600ms ease-out;
       
 }
+
+input, textarea {
+      height: 2rem;
+      margin: .5rem auto;
+      border-radius: 10px;
+      border: #D9D9D9 1px solid;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+textarea {
+      width: 80%;
+}
+
+.contactForm_wrap {
+      position: absolute;
+   
+    
+  
+     
+      padding: 2rem;
+      background-color: #D9D9D9;
+      height: auto;
+      width: 60%;
+      left: 18%;
+}
+
+.contact_form {
+      display: flex;
+      flex-direction: column;
+}

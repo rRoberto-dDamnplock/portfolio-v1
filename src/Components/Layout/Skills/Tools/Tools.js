@@ -18,10 +18,10 @@ const initialToolState = {
 function toolReducer(state, action) {
   switch (action.type) {
     case "TOOL":
-      console.log("TOOL runninb");
+     
       return { toolState: !state.toolState };
     case "ENV":
-      console.log("ENV running");
+     
       return { environmentState: !state.environmentState };
     default:
       throw new Error();
@@ -44,7 +44,7 @@ function Tools(props) {
   // };
   return (
     <div className={classes.tool_wrap} data-aos="fade-right">
-      <h1>Tools/Enverironment</h1>
+      <h1>Tools/Enveronment</h1>
 
       <button className={classes.toolsButton} onClick={toolClickHandler}>
         Tools

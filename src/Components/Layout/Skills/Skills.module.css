@@ -1,6 +1,6 @@
 .skill_wrap {
       margin: 1rem .8rem 1rem 0.8rem;
- 
+      transition: width 2s ease-out, height 2s ease-out;
       /* text-align: center; */
 }
 
@@ -10,7 +10,7 @@
       .skill_wrap{
             margin: 1rem 10rem 1rem 10rem;
             width: auto;
-          
+            transition: width 2s ease-out, height 2s ease-out;    
       }
 
       .skills {
@@ -29,7 +29,7 @@
             border-style:none ;
             cursor: pointer;
             justify-content: center;
-            transition: width 600ms ease-out, height 600ms ease-out;
+            transition: width 2s ease-out, height 2s ease-out;
       }
     
       .skill-button-light {
@@ -39,9 +39,9 @@
             font-size: 20px;
             border-style:none ;
             background-color: red;
-            /* background-color: #F9F6F6 ; */
+            transition: height 0.25s linear;
             cursor: pointer;
-            transition: width 600ms ease-out, height 600ms ease-out;
+            transition: width 2s ease-out, height 2s ease-out;
       }
 
       .skillImg {
@@ -59,6 +59,7 @@
       /* display: flex;
       flex-wrap: wrap; */
       margin: 1rem auto 1rem auto;
+      transition: width 2s ease-out, height 2s ease-out;
 }
 
 .skill-button-light > p {

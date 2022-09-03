@@ -4,6 +4,7 @@
       background-color: #F9F6F6;
     width: 100%;
    padding-bottom: 1rem;
+  
    
 }
 
@@ -14,9 +15,9 @@
 
 .sc_img {
       width: 3rem;
-      height: 100%;
+      height: 3rem;
       margin: 1rem 1rem;
-   
+   object-fit: contain;
 }
 
 .sc_div {
@@ -30,6 +31,11 @@
       
      
 }
+
+.copyright > p {
+      text-align: center;
+}
+/* this is the media query for the computer **********************/
 
 @media screen 
 and (min-device-width: 1000px) 
@@ -60,23 +66,32 @@ p {
 }
 
  .sc_div {
+    
 display: flex;
 flex-direction: column;
-position: absolute;
+
+position: absolute; 
+
+
+top: 5rem;
+
 justify-content: space-between;
 width: 5%;
-top: 5rem;
-/* height: 1rem; */
-bottom: 0;
+
+height: 1rem;
+
 gap: 5rem;
 left: -1%;
 
  }
 
+
+
  .sc_img {
       width: 70%;
       height: 70%;
       margin: 1rem 1rem;
+      object-fit: contain;
       
  } 
 }

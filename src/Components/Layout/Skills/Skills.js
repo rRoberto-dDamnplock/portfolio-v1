@@ -17,9 +17,10 @@ import express from "../../../assets/express.png";
 import firebase from "../../../assets/firebase.png";
 // other
 import git from '../../../assets/git.png'
-import github from '../../../assets/github.png'
+import github from '../../../assets/github-light.png'
 import jquery from '../../../assets/jquery.png'
 import materialUI from '../../../assets/materialUI.png'
+import python from '../../../assets/python.png'
 
 const defaultDivState = {
   front_end: false,
@@ -176,6 +177,11 @@ function Skills(props) {
               <img
                 className={classes.skillImg}
                 src={materialUI}
+                alt="front end skills"
+              />
+              <img
+                className={classes.skillImg}
+                src={python}
                 alt="front end skills"
               />
             

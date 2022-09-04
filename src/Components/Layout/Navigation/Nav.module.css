@@ -1,7 +1,7 @@
 .close {
     position: absolute;
-    right: 5px;
-    top: 5px;
+    right: 0 ;
+    top: -5px;
     width: 32px;
     height: 32px;
     opacity: 0.3;
@@ -12,11 +12,13 @@
   }
   .close:before, .close:after {
     position: absolute;
-    left: 15px;
+    right: 15px;
     content: ' ';
     height: 33px;
     width: 2px;
+    z-index: 500px;
     background-color: rgb(0, 0, 0);
+    /* background-color: red; */
   }
   .close:before {
     transform: rotate(45deg);
@@ -35,10 +37,11 @@
 }
 
 .nav_wrapper > a {
-    font-size: 1.2rem;
+  margin: 2rem auto;
+    font-size: 1.5rem;
     margin-left:.5rem ;
     font-weight: bold;
-    z-index: 200;
+    z-index: 400;
 }
 .nav_modal {
     position: absolute;
@@ -46,15 +49,50 @@
  width: 75%;
     height: 100%;
     background-color: #E7E7E7;
+    /* background-color: transparent; */
     z-index: 200;
 }
 
 
 
+.box:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-45deg, #103783 0%, #9bafd9 100% );
+    transform: translate3d(50px, 20px, 0) scale(0.95);
+    filter: blur(20px);
+    opacity: var(0.7);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.box::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
 
 
-.burger {
-  
+
+
+.burger-light {
   
       width: 55px;
       height: 55px;
@@ -62,7 +100,6 @@
       background: white;
       box-shadow: rgb(136 165 191 / 48%) 6px 2px 16px 0px, rgb(255 255 255 / 80%) -6px -2px 16px 0px;
       ;
-     
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -71,13 +108,49 @@
       transition: all .5s ease;
      margin: 1rem 1rem;
   }
-  .burger:hover {
+
+  .burger-dark {
+    width: 55px;
+    height: 55px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: rgba(45, 3, 141, 0.4) 5px 5px, rgba(93, 22, 207, 0.3) 10px 10px, rgba(43, 23, 221, 0.2) 15px 15px, rgba(124, 48, 247, 0.1) 20px 20px, rgba(46, 179, 240, 0.05) 25px 25px;
+   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease;
+   margin: 1rem 1rem;
+  }
+
+  .burger-light:hover {
       background: rgb(56 56 56);
+  }
+
+  .burger-dark:hover {
+   
+    background: -webkit-linear-gradient(45deg,
+    hsl(159deg 97% 26%) 0%,
+    hsl(160deg 72% 29%) 6%,
+    hsl(164deg 61% 29%) 12%,
+    hsl(170deg 53% 29%) 18%,
+    hsl(178deg 47% 28%) 24%,
+    hsl(187deg 46% 28%) 31%,
+    hsl(196deg 46% 29%) 39%,
+    hsl(207deg 43% 31%) 48%,
+    hsl(221deg 40% 34%) 60%,
+    hsl(233deg 38% 37%) 75%,
+    hsl(244deg 42% 38%) 84%,
+    hsl(251deg 52% 37%) 90%,
+    hsl(257deg 66% 36%) 96%,
+    hsl(262deg 89% 33%) 100%);
   }
   .burger-strip {
       transition: all .5s ease;
   }
-  .strip div {
+  .strip .dash  {
       height: 3px;
       border-radius: 2px;
       background: rgb(56 56 56);
@@ -85,23 +158,23 @@
       transition: all .55s cubic-bezier(0.075, 0.82, 0.165, 1);
       width: 40px;
   }
-  .burger:hover .strip div {
+  .burger-dark, .burger-light:hover .strip .dash {
       background: white;
   }
-.burger-strip-3 div {
+.burger-strip-3 .dash {
       margin: 10px auto;
   }
-  .burger:hover .burger-strip-3 div:first-child {
+  /* .burger-dark, .burger-light:hover .burger-strip-3 .dash:first-child {
       transform: translateY(13px);
       width: 25px;
   }
-  .burger:hover .burger-strip-3 div:nth-child(2) {
+  .burger-dark, .burger-light:hover .burger-strip-3 .dash:nth-child(2) {
       opacity: 0;
   }
-  .burger:hover .burger-strip-3 div:last-child {
+  .burger-dark, .burger-light:hover .burger-strip-3 .dash:last-child {
       transform: translateY(-13px);
       width: 25px;
-  }
+  } */
 
   .modal {
     height: 100%;

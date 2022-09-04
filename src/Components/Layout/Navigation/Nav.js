@@ -32,12 +32,12 @@ function Nav(props) {
       )}
       {!divState && ( 
        <div>
-      <div className={classes.burger} onClick={navClickHandler}>
+      <div className={classes[`burger-${props.checked}`]} onClick={navClickHandler}>
      
       <div className={classes['strip burger-strip-3']} >
-          <div>-</div>
-          <div>-</div>
-          <div>-</div>
+          <div className={classes.dash}>-</div>
+          <div className={classes.dash}>-</div>
+          <div className={classes.dash}>-</div>
       </div>
 
     

@@ -2,6 +2,10 @@
       margin: 1rem .8rem 1rem 0.8rem;
 }
 
+.contact_wrap > h1 {
+      text-align: center;
+}
+
 
 .contactBtn {
     

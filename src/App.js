@@ -29,7 +29,7 @@ const toggleTheme = () => {
     <div className="App" id={theme} data-aos='fade-up' >
    {/* <Modal> */}
   
-<Nav/>
+<Nav checked={theme}/>
 {/* <ReactSwitch onChange={toggleTheme} checked={theme === "dark"} /> */}
 
 <Switch onChange={toggleTheme} />

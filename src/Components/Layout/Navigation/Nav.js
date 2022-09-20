@@ -20,11 +20,11 @@ function Nav(props) {
       
         <div className={classes.nav_wrapper}>
         <a href="#" className={classes.close} onClick={navClickHandler}></a>
-          <a>Currently Learning</a>
-          <a>Skills/Tech</a>
-          <a>Tools</a>
-          <a>Contact me</a>
-          <a>More...</a>
+          <a href='#currently_learning' onClick={navClickHandler}>Currently Learning</a>
+          <a href='#skills_tech' onClick={navClickHandler}>Skills/Tech</a>
+          <a href='#tools' onClick={navClickHandler}>Tools</a>
+          <a href='#contact_me' onClick={navClickHandler}>Contact me</a>
+          <a href='#more' onClick={navClickHandler}>More...</a>
         </div>
         </Modal>
       </div>

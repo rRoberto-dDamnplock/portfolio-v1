@@ -75,7 +75,7 @@ useEffect(() => {
 
   return (
     <div className={classes.carousel_wrap} data-aos="fade-left" id='carousel'>
-    <h1 style={{textAlign: 'center'}}>Currently Learning/Reading...</h1>
+    <h1 style={{textAlign: 'center'}} id='currently_learning'>Currently Learning/Reading...</h1>
     <div className={classes["carousel-container"]}>
       {data.map((item, index) => {
         return <div 

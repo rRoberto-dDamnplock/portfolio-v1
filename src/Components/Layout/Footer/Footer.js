@@ -7,10 +7,10 @@ import classes from './Footer.module.css'
 
 function Footer(props) {
       return (
-            <div className={classes.footer}>
+            <div className={classes.footer} id='more'>
                   <div className={classes.sc_div}>
                
-                  <a >
+                  <a href='https://docs.google.com/document/d/1g3cnxpGHvSTeBInMys2IN_4rkKwivYYnNYjmaGlwo7A/edit#' target='blank'>
                        
                         <img src={require(`../../../assets/download-${props.checked}.png`)} className={classes.sc_img} id='image_footer'alt='social media buttons'/>
                   </a>

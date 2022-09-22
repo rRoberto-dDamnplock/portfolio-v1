@@ -96,7 +96,7 @@ function Contact(props) {
       >
         <h1> Get in Touch</h1>
         <h2>
-          As mentionned earlier, I am open for job opportunities of projects. So
+          As mentioned earlier, I am open for opportunities to sharpen my skills for your cutting edge projects or endeavors. So
           if you would like to discuss more...
         </h2>
         <button className={classes.contactBtn} onClick={contactClickHandler}>

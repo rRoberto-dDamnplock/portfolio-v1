@@ -10,20 +10,20 @@ function Footer(props) {
             <div className={classes.footer} id='more'>
                   <div className={classes.sc_div}>
                
-                  <a href='https://docs.google.com/document/d/1g3cnxpGHvSTeBInMys2IN_4rkKwivYYnNYjmaGlwo7A/edit#' target='blank'>
+                  <a rel='noreferrer' href='https://docs.google.com/document/d/1g3cnxpGHvSTeBInMys2IN_4rkKwivYYnNYjmaGlwo7A/edit#' target='blank'>
                        
                         <img src={require(`../../../assets/download-${props.checked}.png`)} className={classes.sc_img} id='image_footer'alt='social media buttons'/>
                   </a>
                  
-                  <a href='https://github.com/rRoberto-dDamnplock' target="_blank">
+                  <a rel='noreferrer' href='https://github.com/rRoberto-dDamnplock' target="_blank">
                         <img src={require(`../../../assets/github-${props.checked}.png`)} className={classes.sc_img} alt='social media buttons'/>
                   </a>
-                  <a href='https://www.linkedin.com/in/roberto-rajaonarivony-56405122a' target='black'>
+                  <a rel='noreferrer' href='https://www.linkedin.com/in/roberto-rajaonarivony-56405122a' target='black'>
                         <img src={require(`../../../assets/linkedin-${props.checked}.png`)} className={classes.sc_img} alt='social media buttons'/>
                   </a>
-                  <a>
+                  {/* <a rel='noreferrer'>
                         <img src={require(`../../../assets/discord-${props.checked}.png`)} className={classes.sc_img} alt='social media buttons'/>
-                  </a>
+                  </a> */}
                   </div>
                   <div className={classes.copyright}>
                  <p>Designed and built by </p> 

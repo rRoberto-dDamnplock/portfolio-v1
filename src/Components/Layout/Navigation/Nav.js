@@ -19,7 +19,8 @@ function Nav(props) {
       <Modal onClose={navClickHandler}>
       
         <div className={classes.nav_wrapper}>
-        <a href="#" className={classes.close} onClick={navClickHandler}></a>
+        
+        <div className={classes.close}  onClick={navClickHandler}></div>
           <a href='#currently_learning' onClick={navClickHandler}>Currently Learning</a>
           <a href='#skills_tech' onClick={navClickHandler}>Skills/Tech</a>
           <a href='#tools' onClick={navClickHandler}>Tools</a>

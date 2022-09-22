@@ -1,4 +1,4 @@
-import React, { useState, useReducer } from "react";
+import React, { useReducer } from "react";
 import classes from "./Skills.module.css";
 /// front end images
 import html from "../../../assets/html.png";

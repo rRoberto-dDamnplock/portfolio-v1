@@ -28,7 +28,7 @@ function Footer(props) {
                   <div className={classes.copyright}>
                  <p>Designed and built by </p> 
                  <p>Rajaonarivony Tafita Sanchez Roberto</p>
-                 <p>Copyright 2022</p>
+                 <p> ⓒ Copyright 2022</p>
                  </div>
                  {/* <p></p> */}
                  

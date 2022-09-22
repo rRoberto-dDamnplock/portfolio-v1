@@ -8,7 +8,7 @@ import AboutMe from './Components/Layout/About me/AboutMe';
 import Contact from './Components/Layout/Contact/Contact';
 import Footer from './Components/Layout/Footer/Footer';
 
-import ReactSwitch from 'react-switch'
+
 import { createContext, useState } from 'react';
 import Switch from './Components/UI/switch/Switch';
 export const ThemeContext = createContext(null)
@@ -17,7 +17,7 @@ function App() {
 const [theme, setTheme ] = useState('light')
 
 const toggleTheme = () => {
-  setTheme((curr) => (curr === "light" ? "dark" : "light"));
+  setTheme((curr) => (curr === "dark" ? "light" : "dark"));
 };
 
   return (

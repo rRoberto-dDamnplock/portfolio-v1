@@ -15,6 +15,7 @@ import node from "../../../assets/node-js.png";
 import sql from "../../../assets/sql-server.png";
 import express from "../../../assets/express.png";
 import firebase from "../../../assets/firebase.png";
+import aws from '../../../assets/aws.svg'
 // other
 import git from '../../../assets/git.png'
 import github from '../../../assets/github-light.png'
@@ -123,7 +124,7 @@ function Skills(props) {
           )}
         </button>
         <button className={classes["skill-button-light"]} onClick={bclickDivHandler}>
-          Back end   {currDivState.back_end && (
+          Back end / Infrastructure  {currDivState.back_end && (
             <div className={classes.fEnd}>
               <img
                 className={classes.skillImg}
@@ -150,6 +151,11 @@ function Skills(props) {
               <img
                 className={classes.skillImg}
                 src={express}
+                alt="front end skills"
+              />
+                <img
+                className={classes.skillImg}
+                src={aws}
                 alt="front end skills"
               />
             </div>

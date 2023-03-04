@@ -44,7 +44,7 @@ function Tools(props) {
   // };
   return (
     <div className={classes.tool_wrap} data-aos="fade-right" id='tools'>
-      <h1>Tools/Enveronment</h1>
+      <h1>Tools/Environment</h1>
 
       <button className={classes.toolsButton} onClick={toolClickHandler}>
         Tools

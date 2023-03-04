@@ -10,7 +10,7 @@ function Footer(props) {
             <div className={classes.footer} id='more'>
                   <div className={classes.sc_div}>
                
-                  <a rel='noreferrer' href='https://docs.google.com/document/d/1g3cnxpGHvSTeBInMys2IN_4rkKwivYYnNYjmaGlwo7A/edit#' target='blank'>
+                  <a rel='noreferrer' href='https://docs.google.com/document/d/1JgY27k-cTmrxOrWzq2qT4lPYsUiNzGxW6YyeuWR4Ft4/edit#' target='blank'>
                        
                         <img src={require(`../../../assets/download-${props.checked}.png`)} className={classes.sc_img} id='image_footer'alt='social media buttons'/>
                   </a>
@@ -28,7 +28,7 @@ function Footer(props) {
                   <div className={classes.copyright}>
                  <p>Designed and built by </p> 
                  <p>Rajaonarivony Tafita Sanchez Roberto</p>
-                 <p> ⓒ Copyright 2022</p>
+                 <p> ⓒ Copyright 2023</p>
                  </div>
                  {/* <p></p> */}
                  
